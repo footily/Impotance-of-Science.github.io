@@ -1,0 +1,198 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Homepage.</title>
+        <link rel="stylesheet" href="homepage.css"> 
+        <script>
+          function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+          </script>
+    </head>
+<style>
+</style>
+    <body>
+        <body style="background-color:#8bc8db;"></body>
+    <nav>
+        <a href="Homepage.html">Homepage</a>
+        <a href="Page 1.html">Page 1</a>
+        <a href="Page 2.html">Page 2 </a>
+        <a href="Page 3.html">Page 3</a>
+        <a href="Page 4.html">Page 4</a>
+    </nav> 
+</head> 
+<body>
+<u>
+
+<h1>The Science Behind Religion</h1>
+
+</u>
+<br>
+</br>
+Culture and religion play a big role in every persons’ life. Whether it was through stories their family told them since they were little, festivals they celebrate or which god they pray to. As these children grow up into functioning adults, these experiences have shaped our ideologies and morals they follow today. These stories, festivals and legends/myths have been passed down for thousands of years by our ancestors (via their experiences). These practices brought people closer, built strong communities and laid the foundation for many countries (example India).
+<br>
+Even nowadays, many people follow the practices passed down from their family members. But a huge part of these followers don’t know the scientific reasons/aspects behind these practices/habits. They follow these practices and fail to question the reason and logic behind these beliefs. People blindly follow traditions and practices without understanding the logic/scientific reasoning behind them.This can lead to one out of two outcomes, them being either good or bad. 
+<br>
+But as we are currently living in an evolving society, it is important to understand why we do things, as they can affect the people around us or even the future generations and as culture and religion play a big role in a persons’ character and personality, I want to spread awareness on the scientific reasoning/logic behind these popular practices and will be focusing on the most well known practices in the 5 biggest religions in the world. They are-
+Hinduism, Christianity,  Islam,  Buddhism, Judaism
+</br>
+<br>
+<p><img src="what.jpg" height="350" width="600"></p>
+</br>
+Hence, as not everyone in this world is the same or remotely similar, this problem affects us all. There were many brutal conflicts that happened due to people not understanding their culture properly and or not understanding other cultures properly and discriminating against them. These wars did not only kill millions of lives but they also affected other people as well because they ruined the world's economy. An example of wars like this are the World Wars. These wars did not only kill millions of Jews in inhuman ways because the Natzis did not understand their culture , they also killed many people who had no reason to die. Problems related to culture and religion that can arise for many different reasons. Some are:-
+<li>Differences in beliefs</li> 
+<li>Identity and belonging</li>
+<li>Fear and or Insecurity</body>li>
+<li>Historical Differences/ Fights</li>
+<li>Economic and Social Factors</li>
+<li>Extremism and Radicalization</li>
+<p></p>
+
+
+
+
+
+
+
+
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Chatbot</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .chat-box {
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-msg, .bot-msg {
+    margin-bottom: 10px;
+  }
+
+  .user-msg {
+    text-align: right;
+    color: #009688;
+  }
+
+  .bot-msg {
+    text-align: left;
+    color: #333;
+  }
+
+  .input-box {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    padding: 5px;
+    border: none;
+    border-top: 1px solid #ccc;
+    outline: none;
+  }
+
+  .btn {
+    background-color: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-box" id="chat-box"></div>
+  <input type="text" id="user-input" class="input-box" placeholder="Type your message...">
+  <button onclick="sendMessage()" class="btn">Send</button>
+</div>
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "5u0_b2yili9ccs4n_FRdy",
+  domain: "www.chatbase.co"
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="5u0_b2yili9ccs4n_FRdy"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+  
+<script>
+  const faq = {
+    "What is your return policy?": "Our return policy allows for returns within 30 days of delivery. Please contact our customer support for assistance.",
+    "How can I track my order?": "You can track your order by logging into your account on our website or by using the tracking number provided in your confirmation email.",
+    "Do you offer international shipping?": "Yes, we offer international shipping to most countries. Shipping fees may apply depending on your location.",
+    "How can I contact customer support?": "You can contact our customer support team by emailing support@example.com or by calling our toll-free number at 1-800-123-4567."
+  };
+
+  const chatBox = document.getElementById('chat-box');
+  const userInput = document.getElementById('user-input');
+
+  function sendMessage() {
+    const userMsg = userInput.value.trim();
+    if (userMsg === '') return;
+    
+    appendMessage('user', userMsg);
+
+    if (faq.hasOwnProperty(userMsg)) {
+      setTimeout(() => {
+        const botMsg = faq[userMsg];
+        appendMessage('bot', botMsg);
+      }, 500);
+    } else {
+      setTimeout(() => {
+        appendMessage('bot', "I'm sorry, I don't understand that. Please ask another question or contact customer support.");
+      }, 500);
+    }
+
+    userInput.value = '';
+  }
+
+  function appendMessage(sender, message) {
+    const msgContainer = document.createElement('div');
+    msgContainer.classList.add(`${sender}-msg`);
+    msgContainer.innerText = message;
+    chatBox.appendChild(msgContainer);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+</script>
+
+</body>
+</html>
+

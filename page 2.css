@@ -1,0 +1,28 @@
+nav {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: size 3px;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color:#dfd0d0bd;
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 600px) {
+    /* CSS rules for devices with a maximum width of 600px */
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
