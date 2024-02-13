@@ -1,0 +1,264 @@
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Page 4.</title>
+        <link rel="stylesheet" href="Page 4.css"> 
+    </head>
+<style>
+</style>
+    <body>
+        <body style="background-color:#8bc8db;"></body>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="Page 1.html">Page 1</a>
+        <a href="Page 2.html">Page 2 </a>
+        <a href="Page 3.html">Page 3</a>
+        <a href="Page 4.html">Page 4</a>
+    </nav> 
+</head>
+<body>
+<u>
+<h1>Conclusion</h1>
+</u>
+<p>Thank you all for reading and going through this webpage. I really appreciate it, as it is our responsibility to make the world a better place </p>
+<br>
+</br>
+
+<p> Finally, please fill out the google form below for any feedback or questions you might have (these questions can be your own mental health issues you want to disscuss and please note that these will be shared with councillors and hence the reply will also be from them and will contain THEIR OPINION)</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzeEcvzBkjE_ZitgmZ6bmxTdLBG_esPkavuiJo0uunWZZE9g/viewform?embedded=true" width="640" height="760" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<br>
+<u>
+<br>
+    <html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Share Button Example</title>
+    </head>
+    <body>
+        <button id="shareBtn">Share</button>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        
+          if (navigator.share) {
+            
+            var shareButton = document.getElementById('shareBtn');
+        
+            shareButton.addEventListener('click', function() {
+            
+              navigator.share({
+                title: 'Your Webpage Title',
+                text: 'Check out this awesome webpage!',
+                url: window.location.href
+              })
+              .then(() => console.log('Shared successfully'))
+              .catch((error) => console.error('Error sharing:', error));
+            });
+          } else {
+           
+            console.log('Web Share API is not supported on this device/browser.');
+          }
+        });
+        </script>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Box Example</title>
+  <style>
+    /* Basic styling for the chat box */
+    #chatBox {
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ccc;
+      overflow: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for the input area */
+    #inputArea {
+      display: flex;
+    }
+
+    #messageInput {
+      flex: 1;
+      padding: 10px;
+    }
+
+    #sendButton {
+      padding: 10px;
+      background-color: #3498db;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #sendButton:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+<div id="chatBox"></div>
+<div id="inputArea">
+  <input type="text" id="messageInput" placeholder="Type your message">
+  <button id="sendButton">Send</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get elements
+  var chatBox = document.getElementById('chatBox');
+  var messageInput = document.getElementById('messageInput');
+  var sendButton = document.getElementById('sendButton');
+
+  // Add click event listener to send button
+  sendButton.addEventListener('click', function() {
+    sendMessage();
+  });
+
+  // Add "Enter" key functionality
+  messageInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      sendMessage();
+    }
+  });
+
+  // Function to send a message
+  function sendMessage() {
+    var message = messageInput.value.trim();
+
+    if (message !== '') {
+      // Append the message to the chat box
+      chatBox.innerHTML += '<p><strong>You:</strong> ' + message + '</p>';
+
+      // Clear the input field
+      messageInput.value = '';
+
+      // Optionally, you can implement logic to handle responses or further actions here
+    }
+  }
+});
+</script>
+
+<h1>Feedback</h1>
+
+    <div class="feedback-form">
+        <form action="submit_feedback.php" method="post"> <!-- Replace "submit_feedback.php" with your form submission script -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="feedback-type">Feedback Type:</label><br>
+            <select id="feedback-type" name="feedback-type">
+                <option value="general">General feedback</option>
+                <option value="suggestions">Suggestions</option>
+                <option value="technical-issues">Technical issues</option>
+                <option value="others">Others</option>
+            </select><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .chat-container {
+            max-width: 500px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .chat-box {
+            height: 300px;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .chat-input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: none;
+            border-top: 1px solid #ccc;
+            outline: none;
+            font-size: 16px;
+        }
+        .chat-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-box" id="chat-box"></div>
+    <input type="text" id="user-input" class="chat-input" placeholder="Type your message...">
+    <button onclick="sendMessage()" class="chat-btn">Send</button>
+</div>
+
+<script>
+    function sendMessage() {
+        var userInput = document.getElementById("user-input").value;
+        appendMessage("You", userInput);
+        // You can add your chatbot logic here to process user input and generate a response
+        // For this example, let's just echo back the user input
+        setTimeout(function() {
+            appendMessage("Chatbot", userInput); // Echo back user input
+            document.getElementById("user-input").value = ""; // Clear input field
+        }, 500);
+    }
+
+    function appendMessage(sender, message) {
+        var chatBox = document.getElementById("chat-box");
+        var messageElement = document.createElement("div");
+        messageElement.innerHTML = "<strong>" + sender + ":</strong> " + message;
+        chatBox.appendChild(messageElement);
+        chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to bottom
+    }
+</script>
+
+</body>
+
+</body>
+Credits:
+</u>
+</br>
+
+<ol>
+    <li><a href="url"></a></li>
+    <li><a href="url"></a></li>
+    <li><a href="url"></a></i>
+    <li><a href="url"></a></li>
+</ol>
+</body>
+</html>
